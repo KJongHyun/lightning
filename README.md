@@ -1,2 +1,2 @@
-# storm
-스톰 모임
+# lightning
+번개 모임
