@@ -19,4 +19,6 @@ class Account {
 
     var password: String? = null
 
+    var emailVerified: Boolean? = null
+
 }
