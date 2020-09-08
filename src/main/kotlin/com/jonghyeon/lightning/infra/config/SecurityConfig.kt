@@ -14,5 +14,12 @@ class SecurityConfig : WebSecurityConfigurerAdapter() {
                 .mvcMatchers("/", "/login", "/sign-up", "/check-emil-token",
                 "/email-login", "/login-by-email").permitAll()
                 .anyRequest().authenticated()
+
+        http.formLogin()
+                .loginPage("/login").permitAll()
+
+        http.logout()
+                .logoutSuccessUrl("/")
+
     }
 }
